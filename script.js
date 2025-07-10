@@ -11,7 +11,7 @@ async function getSongs() {
 
   console.log("Fetching token from backend...");
 
-  const tokenRes = await fetch("https://your-backend-url.onrender.com/get-token");
+  const tokenRes = await fetch("https://render-test-zp5d.onrender.com/get-token");
   const { access_token } = await tokenRes.json();
 
   console.log("Access token received:", access_token);
