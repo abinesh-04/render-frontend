@@ -31,6 +31,10 @@ function displaySongs(songs) {
   resultsDiv.innerHTML = "";
 
   songs.forEach(song => {
+    const audioHTML = song.preview_url
+      ? `<audio controls src="${song.preview_url}">Your browser doesn't support audio.</audio>`
+      : `<p>No preview available</p>`;
+    
     const html = `
       <div class="song">
         <h3>${song.name} - ${song.artists[0].name}</h3>
