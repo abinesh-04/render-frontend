@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Music App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mood Music 🎵</h1>
+    <label for="mood-select">Select Your Mood:</label>
+    <select id="mood-select">
+      <option value="happy">Happy</option>
+      <option value="sad">Sad</option>
+      <option value="relaxed">Relaxed</option>
+      <option value="energetic">Energetic</option>
+    </select>
+    <button onclick="getSongs()">Get Songs</button>
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
